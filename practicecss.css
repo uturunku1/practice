@@ -1,0 +1,126 @@
+/* Remove margins and padding from the list, and add a black background color. I gave a class in case I have other ul i dont want to give this style. Would have to do same with li ( ul.topnav li a{ } ) */
+ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float:left;}
+
+/* Style the links inside the list items, padding on top bottom and right left */
+ul.topnav li a {
+    display: inline-block; /* this may be unnecesary since float left puts them in line */
+    color: white;
+    padding: 25px 26px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+ul.topnav li a.active {
+    background-color: tomato;
+    color: white;
+  }
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+@media screen and (max-width:680px) {
+ul.topnav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+ul.topnav li{
+  float: none;
+}
+
+ul.topnav li a {
+display: block;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+ul.topnav li a.active {
+    background-color: springgreen;
+    color: white;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color:gainsboro;
+    color: white;
+}
+
+}
+
+.menu {
+    width: 25%;
+    padding: 15px;
+    float: left;
+}
+.content {
+    width: 75%;
+    padding: 15px;
+
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    clear: both; /*to avoid that footer floats on top of menu and content*/
+}
+
+/*layout sections for black and white*/
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: scroll; /*specifies whether to clip ("hidden") content or to add scrollbars when an element's content is too big to fit in a specified area. Only works for block elements with a specified height.*/
+}

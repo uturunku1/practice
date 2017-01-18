@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="cards.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="cards.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <h1 class="fadeinout">Cards with definitions of jquery functions</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading" id="slidedown-head">
+            SlideDown()
+          </div>
+          <div class="panel-body" id="slidedown-body">
+              The .slideDown() function is used for growing an element onto the screen. This can look neat on dropdown navigations or for sliding out popup forms. This is used in conjunction with the jQuery function .slideUp(), which slides the element back to hidden.In the example below, we make a div which isn't visable slide down so we can see the green square.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading fadeout">
+            Fadeout
+          </div>
+          <div class="panel-body fadeout">
+            This jQuery function is used for hiding elements in a fading transitional effect. Examples of what I have previously used this function for are rotating banners and popups on websites. This is usually used with .fadeIn() which trasitions the element from hidden to visable.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading append">
+            Append
+          </div>
+          <div class="panel-body append">
+            The .append() method inserts the specified content as the last child of each element in the jQuery collection (To insert it as the first child, use .prepend()).The .append() and .appendTo() methods perform the same task. The major difference is in the syntax-specifically, in the placement of the content and target. With .append(), the selector expression preceding the method is the container into which the content is inserted. With .appendTo(), on the other hand, the content precedes the method, either as a selector expression or as markup created on the fly, and it is inserted into the target container.
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading toggle">
+            Toggle
+          </div>
+          <div class="panel-body toggle">
+            The toggle() method toggles between hide() and show() for the selected elements.This method checks the selected elements for visibility. show() is run if an element is hidden. hide() is run if an element is visible - This creates a toggle effect.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading fadeto">
+            Fadeto
+          </div>
+          <div class="panel-body fadeto">
+            The required speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.The required opacity parameter in the fadeTo() method specifies fading to a given opacity (value between 0 and 1).The optional callback parameter is a function to be executed after the function completes.The following example demonstrates the fadeTo() method with different parameters.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

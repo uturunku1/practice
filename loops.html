@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="loops.js"></script>
+    <style media="screen">
+      #shoppinglist{
+        display: none;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <h2>List of flavors</h2>
+    <p id="demo"></p>
+    <hr>
+    <h2>Multiply the items:</h2>
+    <p>Array of numbers: 2,3,4</p>
+    <p>Multiply with: <input type="number" id="multiplywith" value="10"></p>
+    <button onclick="myArray()">Try it</button>
+    <hr>
+    <p>New array of numbers:<span id="newarray"></span></p>
+    <div id="blanks">
+      <form>
+        <h2>Grocery list</h2>
+        <div class="form-group">
+          <label for="food">Food items</label>
+          <input type="text" id="food" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="clean">Cleaning items</label>
+          <input type="text" id="clean" class="form-control">
+        </div>
+        <button type="submit" class="btn">submit</button>
+      </form>
+    </div>
+      <div id="shoppinglist">
+        these is are the thing you need to buy:
+        <p id="list"></p>
+        <p> Specially:<span class="special"></span>!</p>
+      </div>
+      <hr>
+      <form id="calculator">
+        <div class="form-group">
+          <label for="countto">Count to:</label>
+          <input id="countto" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="countby">Count by:</label>
+          <input id="countby" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Go!</button>
+      </form>
+      <div id="output">
+
+      </div>
+      <br>
+  </body>
+</html>

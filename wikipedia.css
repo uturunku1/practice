@@ -1,0 +1,33 @@
+h1{
+  font-size: 15px;
+  float: left;
+}
+
+h2{
+  font-size: 15px;
+  float: left;
+  padding-left: 15px;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+  padding: 15px;
+}
+
+header{
+  clear: both;
+}
+
+.container{
+  clear: both;
+}
+
+span{
+  color: red;
+  font-size: 15px;
+  display: block;
+}
